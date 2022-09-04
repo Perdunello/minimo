@@ -1,0 +1,39 @@
+.slider {
+  position: relative;
+  height: 100%;
+}
+.slider .slide {
+  filter: grayscale(100%);
+  width: 100%;
+  height: 580px;
+  object-fit: cover;
+}
+.slider .buttons {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.slider .buttons .button {
+  cursor: pointer;
+  text-align: center;
+  width: 100px;
+  height: 100%;
+}
+.slider .buttons .button:nth-child(1):hover {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.001));
+}
+.slider .buttons .button:nth-child(2):hover {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.001), rgba(255, 255, 255, 0.5));
+}
+
+@media (max-width: 900px) {
+  .slider .slide {
+    height: 380px;
+    object-fit: cover;
+  }
+}
+
+/*# sourceMappingURL=ImageSlider.module.css.map */

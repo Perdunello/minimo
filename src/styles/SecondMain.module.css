@@ -1,0 +1,168 @@
+.main {
+  color: gray;
+}
+.main .about {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+.main .about aside {
+  position: sticky;
+  top: 0;
+  height: 700px;
+  margin-top: 80px;
+}
+.main .about aside .about__img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+.main .about aside h2 {
+  margin-top: 20px;
+}
+.main .about aside .posts {
+  margin-top: 50px;
+}
+.main .about aside .posts h4 {
+  font-size: 14px;
+}
+.main .about aside .posts ul {
+  padding-left: 20px;
+}
+.main .about aside .posts ul .post {
+  padding: 10px;
+  list-style: circle;
+}
+.main .about aside .posts ul .post .post__title {
+  color: black;
+}
+.main .about aside .posts ul .post .countComment {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.info {
+  width: 85%;
+  margin: 80px auto 0 auto;
+}
+.info .info__name {
+  font-size: 14px;
+}
+.info .info__title {
+  margin-top: 20px;
+}
+.info .info__text {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.photos {
+  text-align: center;
+  margin-top: 60px;
+  filter: grayscale(100%);
+}
+.photos .photo {
+  margin-top: 50px;
+  width: 85%;
+  height: 670px;
+  object-fit: cover;
+}
+
+.desc .italics {
+  box-sizing: border-box;
+  width: 90%;
+  padding: 0 50px;
+  margin: 60px auto 0 auto;
+  font-style: italic;
+}
+.desc .mainInfo {
+  width: 85%;
+  margin: 20px auto 0 auto;
+  line-height: 22px;
+}
+
+.social {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90%;
+  padding: 20px;
+  margin: 30px auto 0 auto;
+}
+.social span {
+  font-size: 12px;
+}
+.social ul {
+  display: flex;
+  align-items: center;
+}
+.social ul .social__img {
+  padding: 10px;
+  width: 25px;
+}
+
+.articles {
+  margin-top: 50px;
+  background: #f3f0f0;
+  padding: 140px 70px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-around;
+}
+.articles a {
+  color: gray;
+  text-decoration: none;
+  font-size: 20px;
+}
+.articles a .title {
+  margin-top: 20px;
+}
+.articles span {
+  position: absolute;
+  font-size: 14px;
+  top: 60px;
+  left: 80px;
+}
+.articles img {
+  width: 270px;
+  height: 150px;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .main .about aside .about__img {
+    width: 150px;
+    height: 150px;
+  }
+  .photos {
+    margin-top: 30px;
+  }
+  .photos .photo {
+    margin-top: 30px;
+    height: 400px;
+  }
+}
+@media (max-width: 650px) {
+  .photos .photo {
+    margin-top: 20px;
+    height: 300px;
+  }
+}
+@media (max-width: 600px) {
+  .articles {
+    margin-top: 20px;
+    padding: 70px 70px;
+  }
+  .articles a {
+    font-size: 16px;
+  }
+  .articles span {
+    font-size: 12px;
+    top: 30px;
+    left: 40px;
+  }
+}
+
+/*# sourceMappingURL=SecondMain.module.css.map */

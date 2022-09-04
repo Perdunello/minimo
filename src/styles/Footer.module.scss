@@ -1,0 +1,30 @@
+.footer {
+  color: black;
+  background: lightgrey;
+  display: flex;
+  justify-content: space-between;
+
+  .info {
+    display: flex;
+    align-items: center;
+    div{
+      padding: 10px;
+    }
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+
+    ul {
+      display: flex;
+
+      li {
+        padding: 10px;
+      }
+    }
+  }
+  img{
+    width: 30px;
+  }
+}

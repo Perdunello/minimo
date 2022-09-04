@@ -1,0 +1,28 @@
+.footer {
+  color: black;
+  background: lightgrey;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .info {
+  display: flex;
+  align-items: center;
+}
+.footer .info div {
+  padding: 10px;
+}
+.footer .social {
+  display: flex;
+  align-items: center;
+}
+.footer .social ul {
+  display: flex;
+}
+.footer .social ul li {
+  padding: 10px;
+}
+.footer img {
+  width: 30px;
+}
+
+/*# sourceMappingURL=Footer.module.css.map */

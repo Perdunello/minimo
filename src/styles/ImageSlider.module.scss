@@ -1,0 +1,44 @@
+.slider {
+  position: relative;
+  height: 100%;
+
+  .slide {
+    filter: grayscale(100%);
+    width: 100%;
+    height: 580px;
+    object-fit: cover;
+  }
+
+  .buttons {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+
+    .button {
+      cursor: pointer;
+      text-align: center;
+      width: 100px;
+      height: 100%;
+
+      &:nth-child(1):hover {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.001));
+      }
+
+      &:nth-child(2):hover {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.001), rgba(255, 255, 255, 0.5));
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .slider {
+    .slide {
+      height: 380px;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.login {
+  margin-top: 120px;
+  background: #ece7e7;
+  width: 100%;
+  height: 285px;
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.title {
+  font-size: 35px;
+  margin-top: 70px;
+  color: grey;
+}
+
+.input {
+  width: 400px;
+  height: 40px;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #ece7e7;
+  border: none;
+  border-bottom: 2px black solid;
+  margin-top: 70px;
+  padding-left: 10px;
+}
+
+@media (max-width: 590px) {
+  .login{
+    margin-top: 60px;
+    height: 160px;
+  }
+  .title {
+    margin-top: 20px;
+    font-size: 28px;
+  }
+  .input{
+    margin-top: 20px;
+    width: 250px;
+  }
+}
